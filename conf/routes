@@ -3,13 +3,12 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
+GET     /iframe                                 IFrame.index
+GET     /webwidgets                             WebWidgets.index
+GET     /xmlsnippets                            XmlSnippets.index
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
-
-# Catch all
-*       /{controller}/{action}                  {controller}.{action}
