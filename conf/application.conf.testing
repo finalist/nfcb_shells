@@ -2,4 +2,4 @@
 ######## TEST ENVIRONMENT OVERRIDES ######
 http.port=10000
 application.secret=61ebi6evvYbMK0D4rugM84VJ0oMf3UIcHd2M3H98riXBDgcQmP7blydSHELLSACC
-application.mode=prod
+application.mode=dev
