@@ -36,10 +36,7 @@ end
 namespace :restart do
   desc "Restart the Play! application"
   task :restart_the_play_application do
-    run "#{release_path}/db/scripts/createDB.sh #{create_db_arg} #{release_path}/db/scripts writecompletionscript 2>&1 | tee #{release_path}/log/restart.log"
-    run "#{release_path}/play_no_su.sh stop 2>&1 | tee -a #{release_path}/log/restart.log"
-    run "#{release_path}/db/tmp/createdb.success.sh 2>&1 | tee -a #{release_path}/log/restart.log"
-    run "/usr/bin/nohup #{release_path}/play_no_su.sh start"
+    run "/usr/bin/nohup #{release_path}/play_no_su.sh restart"
   end
 end
 
