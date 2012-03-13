@@ -1,0 +1,17 @@
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+
+# Ignore Play! working directories
+/data
+/eclipse
+/lib
+/logs
+/modules
+/precompiled
+/test-result
+/tmp
+/cobertura.ser
+/target
+/db/tmp/*
