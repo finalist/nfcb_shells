@@ -3,8 +3,9 @@
 PLAY_HOME=/srv/play-1.2.4
 PLAY=$PLAY_HOME/play
 
-APPLICATION_PATH=/srv/rlb/shells/application/current
-SHARED_APPLICATION_PATH=/srv/rlb/shells/application/shared
+APP_BASE_PATH=/srv/rlb/application/shells
+APPLICATION_PATH=$APP_BASE_PATH/current
+SHARED_APPLICATION_PATH=$APP_BASE_PATH/shared
 PIDFILE=$SHARED_APPLICATION_PATH/pids/play.pid
 PLAY_START_LOG=${SHARED_APPLICATION_PATH}/log/play_start.log
 
