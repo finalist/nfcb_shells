@@ -1,4 +1,37 @@
 #{extends 'main.html' /}
-#{set title:'RLB iframe' /}
+#{set title:'RLB Web Widgets' /}
 
-WebWidgets should go here
+<link rel="stylesheet" type="text/css" href="http://localhost:9000/public/stylesheets/main.scss">
+#{set 'moreScripts'}
+    *{<script src="http://localhost:9000/public/javascripts/jquery-1.7.1.min.js" type="text/javascript" charset="UTF-8"></script>}*
+    <script src="http://localhost:9000/public/javascripts/jquery.dropdown.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="http://localhost:9000/public/javascripts/easyTooltip.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="http://localhost:9000/public/javascripts/rlb_interaction.coffee" type="text/javascript" charset="UTF-8"></script>
+    <script src="http://localhost:9000/public/javascripts/rlb_default.coffee" type="text/javascript" charset="UTF-8"></script>
+#{/set}
+
+<div id="main_panel">
+  <div id="errors">
+    #{ifErrors}
+      <ul>
+        #{errors}
+        <li>${error}</li> #{/errors}
+      </ul>
+    #{/ifErrors}
+  </div>
+  <div id="search_panel">
+    *{ filled via AJAX }*
+  </div>
+  <div id="product_panel">
+    *{ filled via AJAX }*
+  </div>
+  <div id="details_panel" class="hidden">
+    *{ filled via AJAX }*
+  </div>
+  <div id="contacts_panel" class="hidden">
+    *{ filled via AJAX }*
+  </div>
+  <div id="theme_panel" class="hidden">
+    *{ filled via AJAX }*
+  </div>
+</div>
