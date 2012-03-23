@@ -1,0 +1,79 @@
+/***** LABEL SPECIFIC COLORS *****/
+#headmast, #oplDB a:hover {
+  background: #A9B532;
+}
+#headmastSubsite {
+  background: #FFF;
+}
+#oplDB a span {
+  color: #A9B532;
+}
+#sitenav, #sitenav a, #sitenavEdit, #sitenavEdit a,
+#headmast #sitenav, #headmast #sitenav a, #headmast #sitenavEdit, #headmast #sitenavEdit a {
+  color: #FFF;
+}
+#sitenavSubsite, #sitenavSubsite a, #sitenavEditSubsite, #sitenavEditSubsite a, 
+#headmast #sitenavSubsite, #headmast #sitenavSubsite a, #headmast #sitenavEditSubsite, #headmast #sitenavEditSubsite a {
+  color: #A9B532;
+}
+#navigation {
+  border-bottom: 5px solid #A9B532;
+}
+#footer {
+  visibility: visible;
+}
+a, #oplDB a {
+  border-color: #A9B532;
+}
+a:hover, .portletHeader h1, .contentPortlet h1, .contentPortlet h2, .contentPortlet h3, .highlightPortlet h4,
+.section-1 h1, #pagecontents h1, #sitemap h1, #oplDB h1, #oplDB h2, .poll.highlite h1 {
+  color: #A9B532;
+}
+/*  Toegevoegd i.v.m. servicecall 95478: Groene daklijn opleidingen overzicht */
+/*  Alle portletboxen krijgen nu label-specifieke kleur: */
+.portletBox .portletHeader h1, .portletBox .portletHeader h4 {
+  border-top: 2px solid #A9B532;
+}
+.contentPortlet ul, .section-1 ul, .highlightPortlet ul, #pagecontents ul {
+  list-style: url("/images/hhs/Library/Images/bullet_383_IE.gif") outside square;
+}
+.contentPortlet>ul, .section-1>ul, .highlightPortlet>ul, #pagecontents>ul {
+  list-style: url("/images/hhs/Library/Images/bullet_383.gif") outside square;
+}
+.highlightPortlet.text, .poll.highlite {
+  border-top: 1px solid #A9B532;
+  border-bottom: 1px solid #A9B532;
+}
+.highlightPortlet.mixed h4, .contentPortlet.labelHome h1, #oplDB h1 {
+  background: #A9B532;
+  color: #FFF;
+}
+input.button2 {
+  color: #FFFFFF;
+  background: #A9B532 no-repeat 0 2px;
+}
+#footer2, #footer2 a {
+  color: #A9B532;
+}
+#footer a { /*  for IE 6.0 JS bug */
+  background: url("/images/hhs/Library/Images/print_383.gif") no-repeat center right;
+}
+#footer .toTop {
+  background: url("/images/hhs/Library/Images/arrow_383.gif") no-repeat center right;
+}
+/* Toegevoegd op 07-09-2007 door Marcel Koot n.a.v. servicecall 100006: Disclaimer toevoegen.*/
+#footer .print { /*  for IE 6.0 JS bug */
+  background: url("/images/hhs/Library/Images/print_383.gif") no-repeat center right;
+}
+#footer .disclaimer {
+  background: none;
+}
+/* Tot hier n.a.v. servicecall 100006: Disclaimer toevoegen.*/
+
+/* Daklijn tabel in labelkleur: */
+table.lijnen_met_daklijn {
+  border-top: 2px solid #A9B532;
+}
+table.overzicht_met_daklijn {
+  border-top: 2px solid #A9B532;
+}

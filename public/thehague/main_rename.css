@@ -1,0 +1,1743 @@
+body {
+  font: x-small Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+  text-align: center;
+}
+body #bodySubsiteKwt{
+  background: #E4DDE8;
+}
+h1, .section-1 h1 {
+  font: bold 1.5em/1.6em Verdana, Arial, Helvetica, sans-serif;
+  margin: -5px 0 5px;
+  padding: 0;
+}
+h2, .section-2 h1 {
+  font: bold 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h3, h4, h5, h6, .section-3 h1, .section-n h1 {
+  font: italic 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font: 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #223343;
+}
+a {
+  color: #223343;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+a:hover {
+  border-bottom: 1px solid;
+}
+/* DK 20081022 - toegevoegd ivm stippellijn onder plaatjes in content */
+a.geen_stippellijn, a:hover.geen_stippellijn {
+  border-bottom: none;
+}
+ul {
+  color: #223343;
+}
+img {
+  border: 0;
+}
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  color: #223343;
+}
+ 
+table.lijnen ul, table.lijnen ol, table.lijnen td, table.lijnen td.li, 
+table.geen_lijnen ul, table.geen_lijnen ol, table.geen_lijnen td, table.geen_lijnen td.li, 
+table.lijnen_met_daklijn ul, table.lijnen_met_daklijn  ol, table.lijnen_met_daklijn td, table.lijnen_met_daklijn td.li, 
+table.overzicht_met_daklijn ul, table.overzicht_met_daklijn ol, table.overzicht_met_daklijn td, table.overzicht_met_daklijn td.li { 
+  font-size: 10px; /*1em; aangepast op 22-08-2007 n.a.v service call door Tom Koonen */
+}
+
+/* fix for p in td */
+table.lijnen td p,
+table.geen_lijnen td p,
+table.lijnen_met_daklijn td p,
+table.overzicht_met_daklijn td p
+{
+	font-size:11px;
+}
+
+table.lijnen tr, table.geen_lijnen tr, table.lijnen_met_daklijn tr, table.overzicht_met_daklijn tr, table.overzicht_met_daklijn tr {
+  font: 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Origineel:
+table.lijnen th, table.lijnen td, 
+table.lijnen_met_daklijn th, table.lijnen_met_daklijn td,
+table.lijnen_zonder_daklijn th, table.lijnen_zonder_daklijn td,
+table.overzicht_met_daklijn th, table.overzicht_met_daklijn td  {
+  border: 1px solid #CCC;
+  padding: 0px 1px;   /* N.a.v. melding: rechterlijn kader valt weg; was: 0px 12px; 
+}
+*/ 
+
+table.lijnen th, table.lijnen td, 
+table.lijnen_met_daklijn th, table.lijnen_met_daklijn td  {
+  border: 1px solid #CCC;
+  padding: 0px 1px;   /* N.a.v. melding: rechterlijn kader valt weg; was: 0px 12px; */
+}
+
+/* Maak uitzonderingen voor "Overzicht met daklijn": */
+table.overzicht_met_daklijn {
+  border: 1px solid #CCC;
+}
+
+table.overzicht_met_daklijn th  {
+  border-right: none;  /* Voorlopig geen border-right voor alle table-headers */
+/*  border-right: 1px solid #CCC; */
+  padding: 0px 1px;
+}
+
+table.overzicht_met_daklijn tr.eerste_rij th {
+  border-right: none;
+  padding: 0px 1px;
+}
+
+table.overzicht_met_daklijn td  {
+  padding: 0px 1px;
+}
+
+
+/*----------------------------------------------------------------*/
+/*  Aanpassingen n.a.v. servicecall 96462: tabel nog niet lekker  */
+/*----------------------------------------------------------------*/
+table.lijnen tbody tr td {
+ vertical-align: top;
+ font-size: 11px; /*tabel lettertype!*/
+}
+table.geen_lijnen tbody tr td {
+ vertical-align: top;
+ font-size: 11px;
+}
+table.lijnen_met_daklijn tbody tr td {
+ vertical-align: top;
+ font-size: 11px;
+}
+table.overzicht_met_daklijn tbody tr td {
+ vertical-align: top;
+ font-size: 11px;
+}
+/*------------------------------------------------------------*/
+/*  Tot hier n.a.v. servicecall 96462: tabel nog niet lekker  */
+/*------------------------------------------------------------*/
+ 
+
+/* Toegevoegd n.a.v. servicecall 92941: Lay out tabellen */
+/* Daklijn tabel in coporate grijs */
+table.lijnen_met_daklijn {
+  border-top: 2px solid #9E918D;
+}
+table.overzicht_met_daklijn {
+  border-top: 2px solid #9E918D;
+}
+
+table.overzicht_met_daklijn tbody {
+  border: 1px solid #CCC;  
+  padding: 0px 1px;   /* N.a.v. melding: rechterlijn kader valt weg; was: 0px 12px; */
+}
+
+table.overzicht_met_daklijn tbody th {
+  border-bottom: 1px solid #CCC;
+  padding: 0px 1px;   /* N.a.v. melding: rechterlijn kader valt weg; was: 0px 12px; */
+}
+
+.hide {
+  display: none;
+}
+
+* html #pageWrapper, * html #pageWrapperSubsite, * html #pageWrapperSubsitePabo, * html #pageWrapperSubsiteKwt, * html #pageWrapperSubsiteFlorence,
+* html #pageWrapperSubsiteToelatingstest, * html #pageWrapperSubsiteZukunftDeutschland, * html #pageWrapperSubsite404, * html #pageWrapperSubsiteComIn, 
+* html #pageWrapperSubsiteInnovationEvent, * html #pageWrapperSubsiteSSMS, * html #pageWrapperSubsiteHealthpoint, * html #pageWrapperSubsiteSportbureau,
+* html #pageWrapperSubsiteMinorcatalogus
+{
+  height: 655px;  /* for IE6.0 */
+}
+
+/*  Speciale pageWrapper voor de subsites: */
+#pageWrapper, #pageWrapperSubsite, #pageWrapperSubsitePabo, #pageWrapperSubsiteKwt, #pageWrapperSubsiteFlorence,
+#pageWrapperSubsiteToelatingstest, #pageWrapperSubsiteZukunftDeutschland, #pageWrapperSubsite404, #pageWrapperSubsiteComIn, 
+#pageWrapperSubsiteInnovationEvent, #pageWrapperSubsiteSSMS, #pageWrapperSubsiteHealthpoint, #pageWrapperSubsiteSportbureau,
+#pageWrapperSubsiteMinorcatalogus
+{
+  width: 755px;
+  min-height: 655px;  /* correct min-height */
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 10px 32px;
+  background: #fff;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+}
+#popupWrapper {
+  width: 567px;
+  min-height: 567px;  /* correct min-height */
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 10px 12px;
+  background: #fff;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+}
+#headmast, #navigation {
+  clear: both;
+}
+#headmast {
+  height: 57px;
+  margin: 0 -10px 10px;
+  padding: 0px 10px 10px;
+}
+#pageWrapperSubsiteFlorence #headmast  {
+  padding-left: 0px;
+}
+#pageWrapperSubsitePabo #headmast  {
+  padding: 0px;
+  margin-top: -10px;
+}
+#pageWrapperSubsiteKwt #headmast  {
+  height: 100px;
+  padding: 0px;
+  margin: 0 -10px 20px;
+}
+#pageWrapperSubsiteToelatingstest #headmast  {
+  height: 70px;
+  margin-top: -10px;
+}
+#pageWrapperSubsiteZukunftDeutschland #headmast  {
+  height: 80px;
+  padding: 0px;
+  margin-top: -15px;
+}
+#pageWrapperSubsite404 #headmast  {
+  height: 100px;
+  padding: 0px;
+  margin: 0 -10px 20px;
+}
+#pageWrapperSubsiteComIn #headmast  {
+  height: 100px;
+  padding: 0px;
+  margin: 0 -10px 20px;
+}
+#pageWrapperSubsiteInnovationEvent #headmast  {
+  height: 160px;
+  padding: 0px;
+  margin-top: -10px;
+}
+#pageWrapperSubsiteSSMS #headmast  {
+  height: 70px;
+  margin-top: -10px;
+}
+#pageWrapperSubsiteHealthpoint #headmast  {
+  height: 57px;
+  margin: 0 -10px 10px;
+  padding: 0px 10px 10px;
+}
+#pageWrapperSubsiteSportbureau #headmast  {
+  height: 57px;
+  margin: 0 -10px 10px;
+  padding: 0px 10px 10px;
+}
+#pageWrapperSubsiteMinorcatalogus #headmast  {
+  height: 57px;
+  margin: 0 -10px 10px;
+  padding: 0px 10px 10px;
+}
+
+#headmast a {
+  border: none;
+}
+#headmast img {
+  border: 0;
+/*  padding: 0 0 0 0;*/
+/*  margin: 0 0 10px;*/
+/* DK 2008-10-03: Margin aangezet om banner weer goed uit te lijnen */
+  margin: 10px 0 0;
+}
+#headmast img#label {
+  position: absolute;
+  top: 0;
+}
+#sitenav, #sitenavEdit, #sitenavSubsite, #sitenavEditSubsite, 
+#headmast #sitenav, #headmast #sitenavEdit, #headmast #sitenavSubsite, #headmast #sitenavEditSubsite  {
+  position: relative;
+  display: inline;
+  float: right;
+  right: 10px;
+/*
+  display: inline;
+  float: right;
+  margin: 2px 0 0;
+*/
+}
+#sitenav a, #sitenavEdit a, #headmast #sitenav a, #headmast #sitenavEdit a  {
+  color: #A9B532;
+  font-size: 1em;
+  text-decoration: none;
+}
+#sitenav a:hover, #sitenavEdit a:hover, #headmast #sitenav a:hover, #headmast #sitenavEdit a:hover {
+  text-decoration: underline;
+}
+#sitenavEdit, #headmast #sitenavEdit {
+  margin-top : -15px;
+}
+#google  {
+  margin-top: -20px;
+  margin-right: 10px;
+}
+#footer2 {
+  display: block;
+  margin: 2px 0 0;
+  width: 755px;
+  margin: -21px auto 0;
+  padding: 0;
+  text-align: left;
+  border-top: 1px solid #CCC;
+  height: 1.5em;
+  color: #A9B532;
+}
+#footer2, #footer2 a {
+  color: #A9B532;
+}
+#footer {
+  visibility: hidden;
+  clear: both;
+  width: 755px;
+  margin: -17px auto 0; /* was: -17px auto 0;*/
+  padding: 0; /* was: 0; */
+  text-align: left;
+  border-top: 1px solid #CCC;
+  height: 1.5em;  /* was: 1.5em; */
+}
+#footer a {
+  position: relative;
+  left: 110px;
+  padding: 0 13px 0 0;
+}
+#footer .toTop {
+  margin: 0;
+  padding: 0 13px 0 0;
+  left: 0;
+}
+ /* Toegevoegd op 07-09-2007 door Marcel Koot n.a.v. servicecall 100006: Disclaimer toevoegen.*/
+ /* Tevens de 'print'-link naar het midden van de footer verplaatst */
+#footer .print {
+  display: inline-block;
+  margin: 0 0 0 155px;
+  padding: 0 13px 0 0;}
+ /* De 'disclaimer'-link komt helemaal rechts in de footer: */
+#footer .disclaimer {
+  display: inline-block;
+  right: 55px;
+  margin: 0 0 0 268px;
+  padding: 0;
+}
+ /* Tot hier n.a.v. servicecall 100006: Disclaimer toevoegen.*/
+
+#popupFooter {
+  visibility: hidden;
+  clear: both;
+  width: 567px;
+  margin: -17px auto 0;
+  padding: 0;
+  text-align: left;
+  border-top: 1px solid #CCC;
+  height: 1.5em;
+}
+#popupFooter a {
+  position: relative;
+  left: 110px;
+  padding: 0 13px 0 0;
+}
+#popupFooter .toTop {
+  margin: 0;
+  padding: 0 13px 0 0;
+  left: 0;
+}
+
+/*****MAIN NAVIGATION ON TOP OF PAGE*****/
+#navigation {
+/*  height: 13em;*/
+/*  height: 14em;*/
+  height: 14.5em;
+/*  margin: 0 0 10px;*/
+  margin: -8px 0 10px;
+/*  padding: 0 0 5px; */
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsites: */
+#pageWrapperSubsite #navigation {
+  height: 11em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite PABO: */
+#pageWrapperSubsitePabo #navigation {
+  height: 13em;
+  margin: 0 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite KWT: */
+#pageWrapperSubsiteKwt #navigation { 
+  height: 14em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("http://portal.hhs.nl/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Florence: */
+#pageWrapperSubsiteFlorence #navigation {
+  height: 15em;
+  margin: 0 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Toelatingstest: */
+#pageWrapperSubsiteToelatingstest #navigation {
+  height: 9em;
+  margin: 0 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Zukunft Deutschland: */
+#pageWrapperSubsiteZukunftDeutschland #navigation {
+  height: 10.5em;
+  margin: -5px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite 404 Error: */
+#pageWrapperSubsite404 #navigation {  height: 13em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("http://portal.hhs.nl/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite COM-IN: */
+#pageWrapperSubsiteComIn #navigation { 
+  height: 14em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("http://portal.hhs.nl/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Innovation Event: */
+#pageWrapperSubsiteInnovationEvent #navigation {
+  height: 9em;
+  margin: 0 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite SSMS: */
+#pageWrapperSubsiteSSMS #navigation {
+  height: 11em;
+  margin: 0 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Healtpoint: */
+#pageWrapperSubsiteHealthpoint #navigation {
+  height: 12em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Sportbureau: */
+#pageWrapperSubsiteSportbureau #navigation {
+  height: 13em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+/*  Speciale pageWrapper voor de subsite Minorcatalogus: */
+#pageWrapperSubsiteMinorcatalogus #navigation {
+  height: 16em;
+  margin: -8px 0 10px;
+  padding: 0 0 5px; 
+  background: #FFF url("/images/hhs/Library/Images/bg-navigation.png") repeat-y;
+}
+#navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;  width: 178px;
+  height: 120px;  /* for IE6.0 */
+  position: absolute;
+}
+#navigation>ul, #navigation ul li>ul { 
+  height: 12em;  /* correct height */
+}
+#navigation ul li ul {
+  left: 189px;
+  top: 0;
+  margin: -1px 0 0;
+}
+#navigation ul li { /* for IE6.0 */
+  margin: 0;
+  padding: 0;
+  width: 188px;
+  height: 1.15em;
+  line-height: 1.34em;
+  font-weight: bold;
+}
+#navigation ul>li { /* correct styles */
+  margin: auto;
+  height: auto;
+}
+#navigation a {
+  /*display: block; uitgezet op 22-08-2007 n.a.v. service call door Tom Koonen. */
+  display: inline-block; /* Toegevoegd op 07-09-2007 door Marcel Koot om inspringen van (te) lange menu-items te voorkomen. */
+  color: #223343;
+  font-weight: normal;
+  text-decoration: none;
+  border: none;
+  padding: 0 0 0 10px;
+  width: 178px;
+}
+#navigation a:hover {
+  text-decoration: underline;
+}
+ 
+/* Uitgezet vanwege menu-wensen C&M
+#navigation a.breadcrumb {
+  font-weight: bold;
+}
+*/
+ 
+#navigation a.menukeuze {
+  font-weight: bold;
+  color: #223343;
+  padding: 0 0 0 0px;
+}
+ 
+#navigation .bachelors a:hover, #navigation .bachelors a.breadcrumb,
+#navigation .masters a:hover, #navigation .masters a.breadcrumb,
+#navigation .professionals a:hover, #navigation .professionals a.breadcrumb,
+#navigation .openstudies a:hover, #navigation .openstudies a.breadcrumb,
+#navigation .research a:hover, #navigation .research a.breadcrumb,
+#navigation .corporate a:hover, #navigation .corporate a.breadcrumb {
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+#navigation .bachelors a:hover, #navigation .bachelors a.breadcrumb {
+  color: #00B2CD;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_3125.gif") no-repeat 2px 6px;
+}
+#navigation .masters a:hover, #navigation .masters a.breadcrumb {
+  color: #FEBE0E;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_124.gif") no-repeat 2px 6px;
+}
+#navigation .professionals a:hover, #navigation .professionals a.breadcrumb {
+  color: #9064AA;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_2583.gif") no-repeat 2px 6px;
+}
+#navigation .openstudies a:hover, #navigation .openstudies a.breadcrumb {
+  color: #F3725A;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_7417.gif") no-repeat 2px 6px;
+}
+#navigation .research a:hover, #navigation .research a.breadcrumb {
+  color: #4A2984;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_408.gif") no-repeat 2px 6px;
+}
+#navigation .corporate a:hover, #navigation .corporate a.breadcrumb {
+  color: #A9B532;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_383.gif") no-repeat 2px 6px;
+}
+#navigation .kwt a:hover, #navigation .kwt a.breadcrumb {
+  color: #4B1A67;
+  background: url("http://portal.hhs.nl/images/hhs/Library/Images/bullet_2583.gif") no-repeat 2px 6px;
+}
+#navigation a.menukeuze:hover{
+  padding: 0 0 0 0px;
+  background: none;
+}
+ 
+/***************************************/
+ 
+/***** MOZAIC ON HOMEPAGE *****/
+.single-cube {  /* for IE6.0 */
+  width: 138px;
+  height: 138px;
+}
+#mosaic>.single-cube {  /* correct dimensions */
+  width: 139px;
+  height: 139px;
+}
+.double-cube-hor {  /* for IE6.0 */
+  width: 288px;
+  height: 138px;
+}
+#mosaic>.double-cube-hor {  /* correct dimensions */
+  width: 290px;
+  height: 139px;
+}
+#mosaic .double-cube-vert {  /* for IE6.0 */
+  width: 138px;
+  height: 288px;
+}
+#mosaic>.double-cube-vert {  /* correct dimensions */
+  width: 139px;
+  height: 290px;}
+.single-cube a, .double-cube-hor a, .double-cube-vert a {
+  color: #FFF;
+}
+.single-cube a:hover, .double-cube-hor a:hover, .double-cube-vert a:hover {
+  text-decoration: none;
+  color: #FFF ;
+}
+.color-bachelors {
+  background: #00B2CD;
+}
+.color-masters {
+  background: #FEBE0E;
+}
+.color-professionals {
+  background: #9064AA;
+}
+.color-opencourses {
+  background: #F3725A;
+}
+.color-research {
+  background: #4A2984;
+}
+.color-corporate {
+  background: #A9B532;
+}
+.color-corporate2 {
+  background: #223343;
+}
+.color-bachelors a:hover {
+  background: #46C7DB;
+}
+.color-masters a:hover {
+  background: #FED050;
+}
+.color-professionals a:hover {
+  background: #AE8EC1;
+}
+.color-opencourses a:hover {
+  background: #F69887;
+}
+.color-research a:hover {
+  background: #B8AFAC;
+}
+.color-corporate a:hover {
+  background: #C0C96A;
+}
+.color-corporate2 a:hover {
+  background: #5E6B76;
+}
+.mozaicBox {
+  margin: 2px;
+  padding: 4px;
+  float: left;
+  overflow: hidden;
+  color: #FFF;
+  position: relative;
+}
+.EditRegionBorder #mosaic {
+  width: 102%;
+}
+.mozaicBox h1 {
+  font-size: 1.2em;
+  margin: -4px 0 3px 0;
+  padding: 0;
+}
+.mozaicBox p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+.mozaicBox a, .mozaicBox p a {
+  border: none;
+}
+.mozaicBox a:hover, .mozaicBox p a:hover {
+  border: none;
+}
+.mozaicBox img {
+  position: relative;
+  top: -4px;
+  left: -4px;
+  width: 146px;  /* for IE6.0 */
+  height: 146px;  /* for IE6.0 */
+  margin: 0;
+  padding: 0;
+}
+/* DK:20080924 toegevoegd voor flash op startpagina */
+.mozaicBox embed {
+  position: relative;
+  top: -4px;
+  left: -4px;
+  width: 146px;  /* for IE6.0 */
+  height: 146px;  /* for IE6.0 */
+  margin: 0;
+  padding: 0;
+}
+.mozaicBox>p embed {  /* correct dimensions */
+  width: 147px;
+  height: 147px;
+}
+#ornament embed {
+  height: 296px;  /* for IE6.0 */
+}
+#ornament>p embed {
+  height: 298px;  /* correct height */
+}
+/* DK:20080924  einde toevoeging */
+.mozaicBox>p img {  /* correct dimensions */
+  width: 147px;
+  height: 147px;
+}
+#ornament img {
+  height: 296px;  /* for IE6.0 */
+}
+#ornament>p img {
+  height: 298px;  /* correct height */
+}
+.mozaicBox table {
+  width: 100%;
+  margin: -4px 0 0;
+  padding: 0;
+}
+.mozaicBox th {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-bottom: 1px solid #FFF; /* toegevoegd 23-11-2006*/
+  color: #FFF;  /* toegevoegd 17-07-2007 */
+}
+.mozaicBox td {
+  font-size: 1.1em;
+  vertical-align: text-top;
+  border-bottom: 1px solid #FFF;/* was border-top 23-11-2006*/
+}
+.date {
+  width: 68px;
+  color: #FFF;   /* toegevoegd 17-07-2007 */
+}
+.mozaicBox ul {
+  margin: -4px 0 0;
+  padding: 0;
+  border-top: 1px solid #FFF;
+  list-style: none;
+}
+.mozaicBox li {
+  font-size: 1.1em;
+  border-bottom: 1px solid #FFF;
+  margin: 0;
+  padding: 0 0 1px;
+}
+* html .mozaicBox li {
+  height: 1%;  /* for IE6.0 */
+}
+.mozaicBox li a {
+  display: block;
+  padding: 0;
+  margin: 0;
+}.mozaicBox li a:hover {
+  margin: 0;  padding: 0;
+}
+#news p a, #events p a, #jobs p a {
+  width: 138px;
+  position: absolute;
+  bottom: 1px;
+}
+#search h1 {
+  border: none;
+}
+#search ul {
+  border: none;  /* for IE6.0 */
+  list-style-image: url("http://portal.hhs.nl/images/hhs/Library/Images/marker.gif");
+  padding: 10px 0 0 14px;
+  position: relative;  /* for IE6.0 */
+  margin: 0;
+}
+#search>ul {
+  padding-top: 10px;
+}
+#search li {
+  height: auto;  /* for IE6.0 */
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#search li a {
+  margin: 0 0 -10px;  /* for IE6.0 */
+  padding: 0;
+}
+#search li>a {  /* correct margins */
+  margin: 0 0 4px;
+}
+*+html #search li {
+  /* for IE7.0 */
+}
+ 
+/********************************/
+ 
+/***** ELEMENTS FOR CONTENT *****/
+.contentPortlet, .section-1, #pagecontents {
+  margin: 0;
+  padding: 0;
+}
+/* 27-03-2007: Volgende is verwijderd  n.a.v. servicecall 95651 - Problemen met tonen witregels in xopus
+.contentPortlet p {
+  margin: 0;
+}
+*/
+/* 20-03-2007: Volgende is toegevoegd n.a.v. servicecall 95172 - Lege regel onder subkop */
+.contentPortlet h1, h2, h3 {
+  margin: 5px 0 0; /* was: 10px 0 0; */
+}
+/* servicecall 95172 - Lege regel onder subkop */
+.contentPortlet ul, .contentPortlet ol, .section-1 ul, .section-1 ol, .section-2 ul, .section-2 ol,
+.section-3 ul, .section-3 ol, #pagecontents ul, #pagecontents ol {
+/*  font-size: 1.1em;*/
+  margin: 0 0 10px;
+  padding: 0 0 0 20px;
+}
+.contentPortlet ul, .section-1 ul, .section-2 ul, .section-3 ul, #pagecontents ul {
+  list-style: outside square;
+}
+.contentPortlet ol, .section-1 ol, .section-2 ol, .section-3 ol, #pagecontents ol {
+  list-style: outside decimal;
+}
+.contentPortlet ul *, .contentPortlet ol *, .section-1 ul *, .section-1 ol *, .section-2 ul *, .section-2 ol *,
+.section-3 ul *, .section-3 ol *, #pagecontents ul *, #pagecontents ol * {
+  font-size: 1.0em;
+  margin: 0;
+}
+.contentPortlet li, .section-1 li, .section-2 li, .section-3 li, #pagecontents li {
+  line-height: 1.6em;
+  margin: 0 10px 0 10px;
+}
+/* Toegevoegd n.a.v. servicecall 95466: Aanpassen tekst bullitlijstje */
+.contentPortlet li, .section-1 li, .section-2 li, .section-3 li, #pagecontents li {
+  font-size: 1.1em;
+}
+/* Commentaar-tekens hieromheen verwijderd n.a.v. servicecall 102352: "lettergrootte bulletlijstje 2e niveau" */
+.contentPortlet li ul li, .section-1 li ul li, .section-2 li ul li, .section-3 li ul li, #pagecontents li ul li {
+  font-size: 1.0em;
+}
+/* Toegevoegd n.a.v. servicecall 98849:lettertype in opsomming */
+.contentPortlet ol li
+{
+  font-size: 1.1em;
+}
+.contentPortlet ul li
+{
+/*  font-size: 1.1em;*/
+}
+.contentPortlet ul li ol li
+{
+  font-size: 1.0em;
+}
+/* Gewijzigd n.a.v. servicecall 103776: website: corpsgrootte subbullet */
+.contentPortlet ul li ul li
+{
+  font-size: 1.0em; /* 1.0em;*/
+}
+.contentPortlet ul li ol li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ul li ol li ul li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ul li ul li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ul li ul li ul li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ul li ol li ol li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ul li ol li ol li ul li  
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ul li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ol li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ol li ul li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ul li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ul li ul li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ol li ol li ol li
+{
+  font-size: 1.0em;
+}
+.contentPortlet ol li ol li ol li ul li  
+{
+  font-size: 1.0em;
+}
+/* Tot hier n.a.v. servicecall 98849:lettertype in opsomming */
+
+/* Tot hier toegevoegd n.a.v. servicecall 95466: Aanpassen tekst bullitlijstje */
+.contentPortlet img {
+  margin: 0 8px -2px 0;
+}
+.contentPortlet table {
+  font-size: 1em; /* Was 1.1em; gewijzigd n.a.v. servicecall 92941: Lay out tabellen */
+  border-collapse: collapse;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.contentPortlet th, .contentPortlet td {
+  text-align: left;
+}
+/* Toegevoegd n.a.v. servicecall 92941: Lay out tabellen */
+/* Headers tabellen in coporate grijs*/
+.contentPortlet th {
+/*  color: #9E918D;*/
+  color: #223343;  /* Antraciet grijs*/
+}
+.contentPortlet.labelHome {
+  padding: 0 0 0 2px;
+  margin: 0 0 20px;
+}
+.contentPortlet.labelHome h1{
+  display: block;
+  font: bold 1.1em/1.2em Verdana, Arial, Helvetica, sans-serif;
+  padding: 2px;
+  margin: 0 -2px;
+}
+ 
+/********************************/
+ 
+/*****  ELEMENTS FOR HIGHLIGHTS *****/
+.highlightPortlet {
+  margin: 0 auto 40px;
+  padding: 2px;
+  width: 143px;
+  overflow: hidden;
+}
+.highlightPortlet h4 {
+  font: bold 1.1em/1.2em Verdana, Arial, Helvetica, sans-serif;
+}
+.highlightPortlet p {
+  margin: 0;
+  font-size: 1em;
+  display: block;
+}
+.highlightPortlet ul, ol {
+  margin: 0 0 10px;
+  padding: 0 0 0 20px;
+}
+.highlightPortlet ul {
+  list-style: outside square;
+}
+.highlightPortlet ol {
+  list-style: outside decimal;
+}
+.highlightPortlet ul *, .highlightPortlet ol * {
+  font-size: 1em;
+  margin: 0;
+}
+.highlightPortlet li {
+  line-height: 1.6em;
+}
+.highlightPortlet.text {
+  border: 1px solid #EEE;
+  background: #EEE;
+}
+.highlightPortlet.banner {
+  height: 143px;
+}
+.highlightPortlet.banner.double {
+  height: 290px;
+}
+.highlightPortlet.mixed, .highlightPortlet.banner {
+  border: 1px solid #CCC;
+}
+.highlightPortlet.mixed img, .highlightPortlet.banner img {
+  width: 147px;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+.highlightPortlet.mixed h4 {
+  display: block;
+  width: 143px;
+  margin: 0;
+  padding: 2px;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+.highlightPortlet.banner img {
+  height: 147px;
+}
+.highlightPortlet.banner.double img {
+  height: 294px;
+}
+.highlightPortlet.banner.small {
+  margin: 0 auto 18px;
+  height: 21px;
+}
+.highlightPortlet.banner.small img {
+  height: 25px;
+}
+/************************************/
+ 
+/***** ELEMENTS FOR COURSELIST *****/
+
+#oplDB {
+  margin: 0 0 10px; 
+  padding: 0;
+  border: 1px solid #CCC;
+}
+#oplDB h1 {
+  background: #EEE;
+  /* Wens portal release 2008-1: hoogte balk opleidingendatabase net zo hoog als gekleurde balk gemengde highlight */
+  /*  font-size: 1.2em; Origineel */
+  font-size: 1.1em;
+  /*  line-height: 1.6em; Origineel */
+  line-height: normal;
+  padding: 0 0 2px 2px;
+  margin: 0 0 -20px;
+}
+#oplDB .portletBodyNoScroll {
+  padding: 0;
+  margin: 0 0 10px;
+}
+#oplDB h2 {
+  margin: 20px 0 -25px;
+  padding: 0 0 0 2px;
+  background: #EEE;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  font-weight: normal;
+  font-style: italic;
+}
+#oplDB a {
+  border: none;
+  display: block;
+  line-height: 1.2em;
+  padding: 2px 0 2px 20px;
+  margin: -2px 0;
+}
+#oplDB a:hover {
+  border: none;
+  color: #FFF;
+  line-height: 1.2em;
+  display: block;
+  margin: -2px 0;
+  padding: 2px 0 2px 20px;
+}
+#oplDB a:hover span {
+  color: #FFF;
+}
+#oplDB ul {
+  margin: 25px 0 0;
+  list-style: none none outside;
+  padding: 0;
+}/* uitgezet op 22-08-2007 n.a.v. service call door Tom Koonen
+#oplDB li {
+  display: block;
+  height: 12px;
+  margin: 0;
+  padding: 1px 0;
+}*/
+/* weer aangezet op 22-08-2007 door Marcel Koot */
+#oplDB li {
+  display: block;
+  height: auto; /* was 12px */
+  margin: 0;
+  padding: 1px 0;
+  zoom: 1;  /* IE6 css hack for win phantom box bug -> zoom fix */
+}
+/* DK - 20091005 - toegevoegd voor uitklap functionaliteit */
+.slideImg {
+  cursor:pointer;
+}
+.slideSpan {
+  float: left;
+  padding:0;
+  margin: 0;
+  width: 5%;
+}
+.slideText {
+  background-color:#bfecf2;
+  color:black;
+  margin:2px 0 0 30px;
+  padding:2px;
+  display:none;
+  clear: both;
+}
+.slideUrl {
+  float: left;
+  width:94%;
+}
+slideUrl:hover {
+  display: inline;
+  margin: 0;
+}
+
+/***********************************/
+ 
+/* ELEMENTS FOR FOTO-ALBUM */
+.photoOverview a{
+  border: 0;
+}
+.photoOverview a:hover {
+  border: 0;
+}
+ 
+/**************************/
+ 
+/* ELEMENTS FOR E-CARDS */
+.ecardOverview a {
+  display: block;
+  float: left;
+  width: 185px;
+  height: 185px;
+  overflow: hidden;
+}
+.ecardOverview img {
+  display: block;
+  margin: 0 auto 0 auto;
+  border: 1px solid #999999;
+}
+.ecardOverview a{
+  border: 0;
+}
+.ecardOverview a:hover {
+  border: 0;
+}
+#ecard label {
+  width: 200px;
+  cursor: text;
+}
+#ecard .text {
+  display: block;
+  position: relative;
+  top: -17px;
+  left: 200px;
+}
+#ecard textarea {
+  border: 1px solid #999999;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin: 20px 0 20px 0;
+  padding: 1px 2px 1px 2px;
+  display: block;
+  width: 250px;
+  height: 150px;
+}
+#ecard img, #ecard .button {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+#ecard img {
+  border: 1px solid #999999;
+}
+#ecard .ecardSender {
+  margin: 4px 0 4px 0;
+  text-align: center;
+}
+#ecard .ecardText {
+  border: 1px solid #999;
+  margin: 0 auto 20px auto;
+  padding: 0 4px 0 4px;
+  width: 300px;
+}
+ 
+/**************************/
+ 
+/* FORM ELEMENTS */
+form {
+  display: inline
+}
+.formControl {
+  margin: 0;
+  padding: 2px 4px 4px  2px;
+  color: #333333;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 13px;
+  cursor: default
+}
+input.text, select {
+  margin: 2px 0 2px 0;
+  border: 1px solid #999;
+  background: #FFFFFF;
+  color: #333333;
+  font-size: 11px;
+}
+input.radio {
+  margin: 0 0 0 24px;
+  padding: 0 4px 4px 24px;
+  color: #666666;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 13px;
+}
+input.button2 {
+  padding: 1px 1px 1px 1px;
+  border: none; 
+  font-size: 11px;
+  margin: 0 -5px 0 2px;
+  color: #A9B532;
+  background: #FFFFFF;
+  cursor: pointer
+}
+input.button {
+  padding: 1px 1px 1px 16px;
+  border: 2px outset;
+  font-size: 11px;
+  font-weight: bold;
+  color: #333333;
+  background: #FFFFFF url("/images/hhs/Library/Images/arrow-corporate.gif") no-repeat 0 2px;
+  cursor: pointer
+}
+input.button_or {
+  padding: 1px 1px 1px 15px;
+  border: 2px outset;
+  font-size: 12px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #333333;
+  background: #FFFFFF url("/images/hhs/Library/Images/arrow_hl_or.gif") no-repeat left top;
+  cursor: pointer
+}
+input.button_red {
+  padding: 1px 1px 1px 15px;
+  border: 2px outset;
+  font-size: 12px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #333333;
+  background: #FFFFFF url("/images/hhs/Library/Images/arrow_hl_red.gif") no-repeat left top;
+  cursor: pointer
+}
+.formRow td p.formControl img {
+  vertical-align: top;
+  display: inline;
+}
+ 
+/**************************/
+ 
+/* ELEMENTS FOR PORTLETS */
+ 
+.portletContainer {
+  margin: 0;
+  padding: 0 4px 0 4px;
+}
+.portletContainer h1 {
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*
+.portletContainer h2 {
+  margin: 0; 
+  padding: 0; 
+  color: #666; 
+  font-size: 11px; 
+  font-weight: bold; 
+  line-height: 17px;
+}
+.portletContainer h3 {
+  margin: 0; 
+  padding: 0; 
+  color: #666;
+  font-size: 11px; 
+  font-weight: normal; 
+  font-style: italic;
+  line-height: 17px;
+}
+*/
+.portletContainer p {
+  margin: 0 0 12px 0;
+  padding: 0;
+  height: auto; /* solves problem with overlapping text in Mozilla browsers */
+}
+ 
+.portletBox {
+  margin: 0 0 20px 0;
+  border: 1px solid #999999;
+  width: auto;
+}
+ 
+.portletContainer img, .portletBox img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+ 
+.portletBox p img {
+  margin: -4px -6px -4px -24px;
+  padding: 0;
+  display: block;
+  width: 193px;
+}
+ 
+p.portletIndent, p.inline {
+  margin: 0;
+/*  padding: 2px 18px 2px 24px;*/
+/*  padding: 2px 18px 2px 4px; */
+/*  color: #666666;*/
+  font-size: 11px;
+/*  line-height: 13px;*/
+  overflow: hidden;
+/*  height: auto; */
+}
+ 
+/*
+p.inline img.inline {
+  float: right;
+  display: block;
+  padding: 0;
+  margin: 4px -12px 4px 4px;
+  width: 85px;
+}
+p.portletParagraph, .RegionNoBorder p.portletParagraph {
+  display: block;
+  padding: 0 4px 0 4px;
+  margin: 0 0 10px 20px;
+}
+a.readMore {
+  color: #666666;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.readMore:link {
+  color: #666666;
+}
+a.readMore:visited {
+  color: #666666;
+}
+a.readMore:hover {
+  color: #A9B532;
+}
+a.portletIndent {
+  display: block;
+  margin: 8px 0 4px 0;
+  padding: 0 0 0 24px;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.portletIndent:link {
+  color: #666666;
+}
+a.portletIndent:visited {
+  color: #666666;
+}
+a.portletIndent:hover {
+  color: #A9B532;
+}
+ul.portletIndent, ol.portletIndent {
+  margin: -4px 0 0 40px;
+  padding: 4px 0 4px 0 ;
+  list-style-image: url("/images/hhs/Library/Images/small_gr.gif");
+  list-style-type: square;
+  list-style-position: outside;
+}
+ol.portletIndent {
+  list-style-image: none;
+  list-style-type: decimal;
+}
+ul.portletIndent li, ol.portletIndent li {
+  margin: 0;
+  color: #666666;
+  font-size: 10px;
+  line-height: 13px;
+}
+.portletBox form {
+  margin: 0;
+  padding: 0 0 4px 16px;
+  display: block;
+}
+.portletHeader form {
+  padding: 0; 
+}
+*/
+ 
+
+.portletBox .portletHeader h1, .portletBox .portletHeader h4 {
+  border-top: 2px solid #A9B532;
+}
+ 
+.portletHeader h1, .portletHeader h4 {
+  margin: 0 0 0 0;
+  padding: 4px 0 5px 4px;
+/*  background: url("/images/hhs/Library/Images/square.gif") no-repeat 4px 4px; */
+  color: #666;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: normal;
+  border-bottom: 1px solid #999999;
+  vertical-align: text-top;
+}
+ 
+.portletHeader h1 a, .portletHeader h4 a {
+  color: #666;
+  text-decoration: none;
+  width: auto;
+  display: block;
+  background: url("/images/hhs/Library/Images/arrow.gif") no-repeat 4px 4px;
+  padding: 4px 0px 4px 24px;
+  margin: -4px 0 -5px -24px;
+  line-height: 13px;
+}
+ 
+.portletHeader h1 a:hover, .portletHeader h4 a:hover {
+  color: #ffffff;
+  background: #A9B532 url("/images/hhs/Library/Images/arrow.gif") no-repeat 4px 4px;
+}
+ 
+a.archive, a.help {
+  position: relative;
+  z-index: 2;
+  top: -18px;
+  margin: 0 10px -12px 0;
+  float: right;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.archive:link, a.help:link {
+  color: #666;
+}
+a.archive:visited, a.help:visited {
+  color: #666;
+}
+a.archive:hover, a.help:hover {
+  color: #666;
+}
+/*
+*/
+.portletHeader table {
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  border-collapse: collapse;
+  font-size: 10px;
+  clear: both;
+}
+.portletBodyScroll {
+  margin: 0;
+  font-size: 10px;
+  height: 140px; 
+  overflow: auto;
+}
+.portletBodyScroll td {
+  vertical-align: baseline;
+}
+.portletBodyNoScroll {
+  margin: 0;
+  padding: 0;
+}
+/* Toegevoegd n.a.v. servicecall 97201 - web: aanpassingen nieuwe formulieren  */
+.portletBodyNoScroll ul li{
+  margin: 4px;
+}
+.portletBodyNoScroll h1 {
+  margin: 0 0 0 13px;
+  padding: 0 0 8px 0;
+  color: #666;
+  font-size: 17px;
+}
+.portletBodyScroll p, .portletBodyNoScroll p {
+/*  height: auto; */
+  height: 120%;
+  font-size: 11px; /* i.p.v. 10px n.a.v. servicecall 97201 - web: aanpassingen nieuwe formulieren  */
+  text-indent: 4px;
+}
+.portletBodyScroll form, .portletBodyNoScroll form {
+  margin: 0;
+  padding: 0;
+}
+.portletFooter {
+  border-top: 1px solid #999999;
+  padding: 0 4px 0 4px;
+}
+.portletFooter p {
+  font-size: 10px;
+  display: inline;
+}
+/**************************/
+ 
+
+/* ELEMENTS FOR OVERVIEWS AND MESSAGE SERVICES */
+.Nr, .Title, .msgChnl, .msgDate, .prsTitle, .prsDate, .actDate, .actTime, .actTitle, .actLoc {
+  height: 20px;
+  color: #666;
+  font-size: 10px;
+  font-weight: bold;
+}
+.Nr {
+/*  width: 32px; */
+  width: 32px;
+  text-indent: 4px;
+}
+.colNr {
+/*  width: 29px;*/
+  width: 32px;
+  text-indent: 4px;
+}
+.Title {
+/*  width: auto;*/
+/*  width: 520px;*/
+  width: auto;
+}
+.colTitle {
+/*  width: auto;*/
+/*  width: 520px;*/
+  width: auto;
+}
+.actTitle {
+  width: auto;
+}
+.colActTitle {
+  width: auto;
+}
+.msgChnl {
+  width: 160px;
+  text-indent: 8px; 
+/*  width: 160px; */
+}
+.colMsgChnl {
+  width: 160px;
+  text-indent: 8px; 
+/*  width: 160px; */
+}
+.colMsgChnl img {
+  display: inline; /* solves linebreak problems for emailportlet */
+}
+.msgDate {
+/*  width: 94px;*/
+  width: 76px;
+  text-indent: 8px; 
+}
+.colMsgDate {
+/*  width: 76px; */
+  width: 76px;
+  text-indent: 8px; 
+}
+.prsTitle {
+  width: auto;
+}
+.colPrsTitle {
+  width: 420px;
+}
+.prsDate {
+  width: auto;
+}.colPrsDate {
+  width: 72px;
+}
+.actDate, .Phone {
+  width: 86px;
+}
+.colActDate {
+  width: 84px;
+}
+.actTime {
+  width: 120px;
+}
+.colActTime {
+  width: 120px;
+}
+.actLoc {
+  width: 60px;
+}
+.colActLoc {
+ width: 60px;
+}
+/***********************************/
+ 
+
+/* ELEMENT FOR POLL */
+.poll.highlite {
+  background: #DDD;
+  margin: 0 auto 40px;
+  padding: 2px;
+  width: 143px;
+  overflow: hidden;
+}
+.poll.highlite h1 {
+  font: bold 1.1em/1.2em Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.poll.highlite p {
+  margin: 0;
+  font-size: 1em;
+  display: block;
+}
+.poll .pollList {
+  list-style-image: none;
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 5px 0 0 10px;
+  padding: 0;
+}
+.poll .pollList li {
+  margin: 0 0 -10px;  /* for IE6.0 */
+  padding: 0;
+}
+.poll .pollList>li {
+  margin: 0;  /* correct margin */
+}
+.poll .pollList img{
+  display: block;
+}
+span.pollResult {
+  display: block;
+  position: relative;
+  margin: -9px 0 4px 0;
+  left: 108px;
+}
+span.pollItem {
+  display: block;
+  margin: -13px 0 0 22px;
+}
+form.poll {
+  margin: 0 0 0 -6px;
+  padding: 0;
+}
+.poll li {
+  margin: 0;
+  padding: 0;
+}
+.poll input {
+  position: relative;
+  top: 4px;
+}
+.poll .button {
+  margin: 2px 0 10px 30px;
+}
+/***********************************/
+ 
+/***** ELEMENTS FOR SITEMAP *****/
+#sitemap a {
+  border: none;
+  font-size: 1.1em;
+}
+/********************************/
+ 
+/***** ELEMENTS FOR SUBSITE *****/
+.subsite {
+  position: relative;
+  top: -49px;
+  left: 189px;
+  width: 360px;
+  margin: 0 0 -49px;
+  padding: 0;
+  font: bold 2.5em Univers, Helvetica, Arial, sans-serif;
+}
+.subsite a {
+  color: #223343;
+  margin: 0;
+  padding: 0;
+}
+.subsite a:hover {
+  color: #223343;
+}
+/********************************/
+ 
+/***** ELEMENTS FOR ABC-INDEX ******/
+#abcIndex {
+  margin: -1px 0 0 0;
+  padding: 4px 0 4px 0;
+  list-style-type: none;
+  border-top: 1px solid #999999;
+  background: #F7F7F7;
+  text-align: center;
+}
+#abcIndex li {
+  display: inline;
+  margin: 0;
+  padding: 0 1px 0 5px;
+  font-size: 13px;
+  line-height: 17px;
+  border-right: 1px solid #000000;
+}
+li#abcIndexLast {
+  border-right: none;
+}
+#abcItems {
+  background: #F7F7F7;
+  margin: 16px 0 0 0;
+  padding: 0
+}
+#abcItems h1 {
+  margin: 0 0 0 18px;
+  padding: 4px 0 4px 0;
+}
+#abcItemxList {
+  background: #FFFFFF;
+  margin: 0 0 0 18px;
+  padding: 0;
+}
+#abcItemxList ul {
+  position: relative;  
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+#abcItemxList li{
+  display: block;
+  margin: 0;
+  font-size: 11px;
+  line-height: 17px;
+  text-indent: 20px;
+}
+#abcIndex a, #abcIndex a:link, #abcIndex a:visited {
+  text-decoration: none;
+}
+#pulldownKeuzeMenu {
+  margin: 0 0 20px 0;
+}
+/********************************/
+ 
+/***** MISC. ELEMENTS *****/
+.editMode {
+  height: 110%;
+}
+.editMode.highlightPortlet img {
+  margin: 0 0 -6px;
+}
+a.topnav {
+  position: relative;
+  top: -10px;
+}
+/**************************/

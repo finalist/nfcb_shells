@@ -3,3 +3,4 @@
 require:
     - play 1.2.4
     - play -> coffee 1.0
+    - play -> sass 1.1

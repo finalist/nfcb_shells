@@ -1,0 +1,6 @@
+#Stylesheets for the application.
+
+Note that there are scss and css versions of main and print.
+- scss is automatically compiled to css and used in render due to the Play! SASS module.
+- css is manually compiled (you can use the script compile_stylesheets located in the project directory) because the PDF
+module does not work together with the SASS module.

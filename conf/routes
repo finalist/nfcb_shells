@@ -4,7 +4,7 @@
 
 # Home page
 GET     /iframe                                  IFrame.index
-GET     /webwidgets                              WebWidgets.index
+GET     /webwidgets                              webwidgets.TheHague.index
 GET     /xmlsnippets                             XmlSnippets.index
 
 # Ignore favicon requests

@@ -1,0 +1,77 @@
+* {
+  visibility: hidden;
+}
+body {
+  font: 10pt/12pt Verdana, Arial, Helvetica, sans-serif;
+}
+#headmast img, .contentPortlet, .contentPortlet *,
+#pagecontents, #pagecontents *, table, td, tr {
+  visibility: visible;
+}
+#headmast img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#headmast img#label {
+  visibility: hidden;
+}
+#navigation {
+  visibility: visible;
+  height: 0.5cm;
+  margin: 0;
+  padding: 0;
+}
+#navigation ul {
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 178px;
+  position: absolute;
+}
+#navigation ul li ul {
+  visibility: visible;
+  left: 180px;
+  top: 0;
+  margin: -1px 0 0;
+}
+#navigation ul li { /* for IE6.0 */
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+  width: 188px;
+}
+#navigation a.breadcrumb {
+  visibility: visible;
+  width: 178px;
+  position: absolute;
+  top: 0;
+}
+#navigation a {
+  font: bold italic 8pt/10pt Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  width: auto;
+}
+.contentPortlet, #pagecontents {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 18cm;
+}
+.contentPortlet img, #pagecontents img {
+  display: none;
+}
+.contentPortlet h1, #pagecontents .section-1 h1 {
+  font: 16pt/20pt Verdana, Arial, Helvetica, sans-serif;
+}
+.contentPortlet h2, #pagecontents .section-2 h1 {
+  font: bold 12pt/14pt Verdana, Arial, Helvetica, sans-serif;
+}
+.contentPortlet h3, #pagecontents .section-3 h1, #pagecontents .section-n h1 {
+  font: italic 10pt/12pt Verdana, Arial, Helvetica, sans-serif;
+}
+.contentPortlet p {
+  font: 10pt/12pt Verdana, Arial, Helvetica, sans-serif;
+}
