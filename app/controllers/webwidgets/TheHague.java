@@ -1,4 +1,4 @@
-package controllers.webwidgets;
+package controllers.WebWidgets;
 
 import play.*;
 import play.mvc.*;
