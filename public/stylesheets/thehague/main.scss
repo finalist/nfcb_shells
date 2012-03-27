@@ -27,6 +27,7 @@ $main-border-width: 1px;
 $main-net-width: $body-width - 2 * ($main-margin + $main-border-width);
 $net-width-for-product-and-search: $main-net-width - $main-margin - 3 * $main-border-width;
 
+body { overflow: auto; }
 h1 { font-size: 1.5em; line-height: 1.2em; color: $secondary-color; }
 h2 { font-weight: bold; font-size: 1.1em; line-height: 1.2em; margin: 1.4em 0 0.6em 0; color: $primary-color; }
 a { color: $secondary-color; text-decoration: none; }
@@ -70,11 +71,11 @@ p.authority {
     float: left;
     margin: $main-margin $main-margin $main-margin $main-margin/2;
     padding: 15px $main-padding $main-padding $main-padding;
-    width: $net-width-for-product-and-search * 0.75 - 2 * $main-padding;
+    width: $net-width-for-product-and-search * 0.5 - 2 * $main-padding;
 }
 
 #theme_panel {
-    $theme-panel-width: $net-width-for-product-and-search * 0.75 - 2 * $main-padding;
+    $theme-panel-width: $net-width-for-product-and-search * 0.5 - 2 * $main-padding;
     border: $main-border-width solid $border-color;
     float: left;
     margin: $main-margin;
@@ -129,16 +130,21 @@ p.authority {
     }
 }
 
+#right_column {
+    float: left;
+    width: $net-width-for-product-and-search * 0.25 - 2 * $main-padding;
+}
 #contacts_panel {
     border: $main-border-width solid $border-color;
-    float: left;
     margin: $main-margin $main-margin $main-margin $main-margin/2;
     padding: 15px $main-padding $main-padding $main-padding;
-    width: $net-width-for-product-and-search * 0.25 - 2 * $main-padding - 20;
+    width: 100%;
     div.contact_element { border-bottom: 2px dotted $border-color; }
     div.contact_element.last { border-bottom: none; }
     p { margin: 0.5em 0; }
 }
+div#footer2 { clear: both; }
+div#pageWrapper { overflow: auto; }
 
 #search_panel {
     $search-panel-width: $net-width-for-product-and-search * 0.25 - 2 * ($main-padding + $main-border-width);
@@ -146,6 +152,7 @@ p.authority {
     border: $main-border-width solid $border-color;
     float: left;
     margin: $main-margin $main-margin/2 $main-margin $main-margin;
+    overflow: auto;
     padding: $main-padding;
     width: $search-panel-width;
 
@@ -295,7 +302,7 @@ p.authority {
     float: left;
     margin: $main-margin $main-margin $main-margin $main-margin/2;
     padding: 15px $main-padding $main-padding $main-padding;
-    width: $net-width-for-product-and-search * 0.75 - 2 * $main-padding;
+    width: $net-width-for-product-and-search * 0.5 - 2 * $main-padding;
 
     a.link_to_theme {
         color: $primary-color;
