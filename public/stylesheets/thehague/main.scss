@@ -354,6 +354,7 @@ div#pageWrapper { overflow: auto; }
     -moz-box-shadow: 2px 2px 11px #666;
     -webkit-box-shadow: 2px 2px 11px #666;
     word-wrap: break-word;
+    z-index: 100;
 
     p { margin-bottom: 0.7em; }
     ol { list-style: square outside; padding-left: 1.5em; }
