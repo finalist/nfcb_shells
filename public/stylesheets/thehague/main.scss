@@ -48,6 +48,7 @@ a.asPdfAction {
     height: 32px;
     width: $pdficon-width;
     text-decoration: none;
+    outline: 0;
 }
 div.help {
     background: url(../../images/thehague/help_icon.gif) no-repeat;
