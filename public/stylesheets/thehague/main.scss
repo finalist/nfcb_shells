@@ -7,7 +7,7 @@ $secondary-color: #A9B532;
 $tertiary-color: #E8E8E8;
 $border-color: #CCC;
 $light-bg-color: #F9F9F9;
-$pdficon-width: 32px
+$pdficon-width: 32px;
 
 
 /***************************
@@ -47,6 +47,7 @@ a.asPdfAction {
     display: block;
     height: 32px;
     width: $pdficon-width;
+    text-decoration: none;
 }
 div.help {
     background: url(../../images/thehague/help_icon.gif) no-repeat;
