@@ -7,6 +7,7 @@ $secondary-color: #A9B532;
 $tertiary-color: #E8E8E8;
 $border-color: #CCC;
 $light-bg-color: #F9F9F9;
+$pdficon-width: 32px
 
 
 /***************************
@@ -45,7 +46,7 @@ a.asPdfAction {
     cursor: pointer;
     display: block;
     height: 32px;
-    width: 32px;
+    width: $pdficon-width;
 }
 div.help {
     background: url(../../images/thehague/help_icon.gif) no-repeat;
@@ -98,7 +99,7 @@ p.authority {
     width: $details-panel-width;
     border: $main-border-width solid $border-color;
 
-    a.back_to_search_results { margin-right: 22px; }
+    a.back_to_search_results { margin-right: $pdficon-width + 6; }
     a.asPdfAction { float: right; }
 
     h1 {
