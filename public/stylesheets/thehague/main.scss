@@ -40,7 +40,6 @@ a.back_to_search_results {
     display: block;
     padding: 15px;
     text-decoration: none;
-    border-bottom-style: none;
 }
 a.asPdfAction {
     background: url(http://www.adobe.com/images/pdficon_large.gif) no-repeat;
@@ -49,7 +48,7 @@ a.asPdfAction {
     height: 32px;
     width: $pdficon-width;
     text-decoration: none;
-    outline: 0;
+    border-bottom-style: none;
 }
 div.help {
     background: url(../../images/thehague/help_icon.gif) no-repeat;
