@@ -75,6 +75,10 @@ p.authority {
     margin: $main-margin $main-margin $main-margin $main-margin/2;
     padding: 15px $main-padding $main-padding $main-padding;
     width: $net-width-for-product-and-search * 0.5 - 2 * $main-padding;
+    
+    p.disclaimer {
+        font-size: 9px;
+    }
 }
 
 #theme_panel {
